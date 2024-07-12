@@ -1,6 +1,6 @@
 {
   "name": "@mustapha-ghlissi/react-native-accordion",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React Native Accordion: A group of Collapsible Sections.",
   "type": "module",
   "main": "lib/commonjs/index",
