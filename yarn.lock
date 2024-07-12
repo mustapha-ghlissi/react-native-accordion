@@ -1683,15 +1683,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@egjs/hammerjs@npm:^2.0.17":
-  version: 2.0.17
-  resolution: "@egjs/hammerjs@npm:2.0.17"
-  dependencies:
-    "@types/hammerjs": ^2.0.36
-  checksum: 8945137cec5837edd70af3f2e0ea621543eb0aa3b667e6269ec6485350f4d120c2434b37c7c30b1cf42a65275dd61c1f24626749c616696d3956ac0c008c4766
-  languageName: node
-  linkType: hard
-
 "@eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.4.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -1926,10 +1917,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mustapha-ghlissi/react-native-accordion@workspace:.":
+"@mustapha-ghlissi/react-native-accordion@^1.0.3, @mustapha-ghlissi/react-native-accordion@workspace:.":
   version: 0.0.0-use.local
   resolution: "@mustapha-ghlissi/react-native-accordion@workspace:."
   dependencies:
+    "@mustapha-ghlissi/react-native-accordion": ^1.0.3
     "@react-native/eslint-config": ^0.74.85
     "@types/react": ^18.3.3
     "@types/react-native-vector-icons": ^6.4.18
@@ -1939,7 +1931,6 @@ __metadata:
     react: ^18.3.1
     react-native: ^0.74.3
     react-native-builder-bob: ^0.25.0
-    react-native-gesture-handler: ^2.17.1
     react-native-reanimated: ^3.13.0
     react-native-vector-icons: ^10.1.0
     typescript: ^5.5.3
@@ -1948,7 +1939,6 @@ __metadata:
     "@types/react-native-vector-icons": ">=6.4.18"
     react: "*"
     react-native: "*"
-    react-native-gesture-handler: ">=2.17.1"
     react-native-reanimated: ">=3.13.0"
     react-native-vector-icons: ">=10.1.0"
   languageName: unknown
@@ -2476,13 +2466,6 @@ __metadata:
   dependencies:
     "@sinonjs/commons": ^3.0.0
   checksum: 614d30cb4d5201550c940945d44c9e0b6d64a888ff2cd5b357f95ad6721070d6b8839cd10e15b76bf5e14af0bcc1d8f9ec00d49a46318f1f669a4bec1d7f3148
-  languageName: node
-  linkType: hard
-
-"@types/hammerjs@npm:^2.0.36":
-  version: 2.0.45
-  resolution: "@types/hammerjs@npm:2.0.45"
-  checksum: 40a29067c485a2a1f4345718104218fcf769adb1dbe091cdb6f679b3293dfa0798b207eb498ee7fd79ae8664c999117738fa0c01753f7465a639128f38c3ff5b
   languageName: node
   linkType: hard
 
@@ -5048,15 +5031,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hoist-non-react-statics@npm:^3.3.0":
-  version: 3.3.2
-  resolution: "hoist-non-react-statics@npm:3.3.2"
-  dependencies:
-    react-is: ^16.7.0
-  checksum: b1538270429b13901ee586aa44f4cc3ecd8831c061d06cb8322e50ea17b3f5ce4d0e2e66394761e6c8e152cd8c34fb3b4b690116c6ce2bd45b18c746516cb9e8
-  languageName: node
-  linkType: hard
-
 "http-cache-semantics@npm:^4.1.1":
   version: 4.1.1
   resolution: "http-cache-semantics@npm:4.1.1"
@@ -7319,7 +7293,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.13.1, react-is@npm:^16.7.0":
+"react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
@@ -7359,21 +7333,6 @@ __metadata:
   bin:
     bob: bin/bob
   checksum: b2e2fc616937e5a2d891cdaf32add170213ccbd0c16527894796701a018f5670dc82724723e78e6a10d0f78e0c36f60e0ae2234f4548275ac5c6df7c58aa7a69
-  languageName: node
-  linkType: hard
-
-"react-native-gesture-handler@npm:^2.17.1":
-  version: 2.17.1
-  resolution: "react-native-gesture-handler@npm:2.17.1"
-  dependencies:
-    "@egjs/hammerjs": ^2.0.17
-    hoist-non-react-statics: ^3.3.0
-    invariant: ^2.2.4
-    prop-types: ^15.7.2
-  peerDependencies:
-    react: "*"
-    react-native: "*"
-  checksum: 70da4fc51d92899591aadf03396a8e0b78223fbe71da5b10e76232058c1ef5943d54c1dd8da815d5b6a8b41f259ea9d50457680e2ef7878c88d7396771170ae3
   languageName: node
   linkType: hard
 

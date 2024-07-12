@@ -1,6 +1,6 @@
 {
   "name": "@mustapha-ghlissi/react-native-accordion",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "React Native Accordion: A group of Collapsible Sections.",
   "type": "module",
   "main": "lib/commonjs/index",
@@ -77,8 +77,16 @@
     "targets": [
       "commonjs",
       "module",
-      "typescript"
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
     ]
   },
-  "packageManager": "yarn@3.6.4"
+  "packageManager": "yarn@3.6.4",
+  "dependencies": {
+    "@mustapha-ghlissi/react-native-accordion": "^1.0.3"
+  }
 }

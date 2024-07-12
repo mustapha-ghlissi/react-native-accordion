@@ -16,7 +16,11 @@ import {
   View,
 } from 'react-native';
 
-import {Accordion, AccordionItem} from './components';
+import {
+  Accordion,
+  AccordionItem,
+} from '@mustapha-ghlissi/react-native-accordion';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 function Profile() {
   return (
@@ -66,15 +70,17 @@ function App(): React.JSX.Element {
         titleStyle={styles.titleStyle}
         contentContainerStyle={styles.contentContainerStyle}>
         <AccordionItem
-          rightIcon="cogs"
+          leftIcon="account-circle"
           title="My profile"
           subTitle="Mustapha GHLISSI">
           <Profile />
         </AccordionItem>
-        <AccordionItem rightIcon="cogs" title="Settings">
+        <AccordionItem leftIcon="cogs" title="Settings">
           <Settings />
         </AccordionItem>
-        <AccordionItem rightIcon="cogs" title="Notifications">
+        <AccordionItem
+          leftIcon={<Icon name="notification" size={26} color={'#000'} />}
+          title="Notifications">
           <Text>We are cuurently working on this section.</Text>
         </AccordionItem>
       </Accordion>

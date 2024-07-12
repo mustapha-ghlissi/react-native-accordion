@@ -10,8 +10,9 @@
 ![Screen 1](./screenshots/screen-1.jpg)
 ![Screen 2](./screenshots/screen-2.jpg)
 ![Screen 3](./screenshots/screen-3.jpg)
-![Screen 4](./screenshots/screen-4.jpg)
-![Screen 5](./screenshots/screen-5.jpg)
+![Screen 4](./screenshots/c-screen-1.jpg)
+![Screen 5](./screenshots/c-screen-2.jpg)
+![Screen 6](./screenshots/c-screen-3.jpg)
 
 ## Example
 

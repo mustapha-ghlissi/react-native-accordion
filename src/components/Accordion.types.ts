@@ -3,7 +3,7 @@ import {PressableAndroidRippleConfig, TextStyle, ViewStyle} from "react-native";
 
 export type CommonProps = PropsWithChildren<{
   androidRipple?: PressableAndroidRippleConfig;
-  leftIcon?: string | ReactNode;
+  rightIcon?: string | ReactNode;
   titleStyle?: TextStyle;
   subTitleStyle?: TextStyle;
   headerStyle?: ViewStyle;
@@ -18,7 +18,7 @@ export type AccordionItemProps = CommonProps & {
   subTitle?: string | ReactNode;
   header?: ReactNode;
   index?: number;
-  rightIcon?: string | ReactNode;
+  leftIcon?: string | ReactNode;
 };
 
 export type AccordionProps = CommonProps & {

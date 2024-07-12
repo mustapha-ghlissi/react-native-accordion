@@ -9,7 +9,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "DOM"],
     "module": "ESNext",
     "moduleResolution": "Node",
     "noFallthroughCasesInSwitch": true,
@@ -23,6 +23,6 @@
     "strict": true,
     "target": "ESNext"
   },
-  "exclude": ["example"],
+  "exclude": ["example", "lib/**/*"],
   "include": ["src"]
 }

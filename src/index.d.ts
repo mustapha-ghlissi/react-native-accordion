@@ -3,32 +3,31 @@ declare module "@mustapha-ghlissi/react-native-accordion" {
     import {PressableAndroidRippleConfig, TextStyle, ViewStyle} from "react-native";
 
     export type CommonProps = PropsWithChildren<{
-        androidRipple?: PressableAndroidRippleConfig;
-        leftIcon?: string | ReactNode;
-        titleStyle?: TextStyle;
-        subTitleStyle?: TextStyle;
-        headerStyle?: ViewStyle;
-        titleContainerStyle?: ViewStyle;
-        itemContainerStyle?: ViewStyle;
-        contentContainerStyle?: ViewStyle;
-        contentWrapperStyle?: ViewStyle;
-    }>;
+  androidRipple?: PressableAndroidRippleConfig;
+  rightIcon?: string | ReactNode;
+  titleStyle?: TextStyle;
+  subTitleStyle?: TextStyle;
+  headerStyle?: ViewStyle;
+  titleContainerStyle?: ViewStyle;
+  itemContainerStyle?: ViewStyle;
+  contentContainerStyle?: ViewStyle;
+  contentWrapperStyle?: ViewStyle;
+}>;
 
-    export type AccordionItemProps = CommonProps & {
-        title: string | ReactNode;
-        subTitle?: string | ReactNode;
-        header?: ReactNode;
-        index?: number;
-        rightIcon?: string | ReactNode;
-    };
+export type AccordionItemProps = CommonProps & {
+  title: string | ReactNode;
+  subTitle?: string | ReactNode;
+  header?: ReactNode;
+  index?: number;
+  leftIcon?: string | ReactNode;
+};
 
-    export type AccordionProps = CommonProps & {
-        containerStyle?: ViewStyle;
-        animationDuration?: number;
-        compact?: boolean;
-    };
+export type AccordionProps = CommonProps & {
+  containerStyle?: ViewStyle;
+  animationDuration?: number;
+  compact?: boolean;
+};
 
-    const Accordion: React.FC<AccordionProps>;
-    
-    export default Accordion;   
+    export const Accordion: React.FC<AccordionProps>;
+    export const AccordionItem: React.FC<AccordionItemProps>;
 }

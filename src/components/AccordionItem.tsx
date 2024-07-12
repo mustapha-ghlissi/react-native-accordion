@@ -1,5 +1,5 @@
-import React, {useContext} from 'react';
-import {Pressable, Text, View} from 'react-native';
+import React, { useContext } from 'react';
+import { Pressable, Text, View } from 'react-native';
 import Animated, {
   useAnimatedStyle,
   useDerivedValue,
@@ -9,14 +9,14 @@ import Animated, {
 } from 'react-native-reanimated';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import type {AccordionItemProps} from './Accordion.types';
-import {AccordionContext} from './AccordionList';
+import type { AccordionItemProps } from './Accordion.types';
+import { AccordionContext } from './AccordionList';
 import styles from './style';
 
 const AccordionItem = (props: AccordionItemProps) => {
-  const {index, header, children, title, subTitle, rightIcon} = props;
+  const { index, header, children, title, subTitle, leftIcon } = props;
   const accordionContext = useContext(AccordionContext);
-  const {compact, animationDuration, androidRipple} = accordionContext;
+  const { compact, animationDuration, androidRipple } = accordionContext;
 
   const itemContainerStyle =
     props.itemContainerStyle || accordionContext.itemContainerStyle;
@@ -27,8 +27,8 @@ const AccordionItem = (props: AccordionItemProps) => {
   const headerStyle = props.headerStyle || accordionContext.headerStyle;
   const titleStyle = props.titleStyle || accordionContext.titleStyle;
   const subTitleStyle = props.subTitleStyle || accordionContext.subTitleStyle;
-  const leftIcon =
-    props.leftIcon || accordionContext.leftIcon || 'chevron-right';
+  const rightIcon =
+    props.rightIcon || accordionContext.rightIcon || 'chevron-right';
   const titleContainerStyle =
     props.titleContainerStyle || accordionContext.titleContainerStyle;
 
@@ -37,14 +37,14 @@ const AccordionItem = (props: AccordionItemProps) => {
   const derivedHeight = useDerivedValue(() =>
     withTiming(height.value * Number(open.value), {
       duration: animationDuration,
-    }),
+    })
   );
   const baseWrapperStyle = useAnimatedStyle(() => ({
     height: derivedHeight.value,
   }));
   const iconRotate = useSharedValue<string>('0deg');
   const animatedIconStyles = useAnimatedStyle(() => ({
-    transform: [{rotate: withSpring(iconRotate.value)}],
+    transform: [{ rotate: withSpring(iconRotate.value) }],
   }));
 
   const onToggleCollapse = () => {
@@ -75,14 +75,15 @@ const AccordionItem = (props: AccordionItemProps) => {
         headerStyle,
       ]}
       android_ripple={androidRipple}
-      onPress={onToggleCollapse}>
+      onPress={onToggleCollapse}
+    >
       {header ?? (
         <>
-          {rightIcon &&
-            (typeof rightIcon === 'string' ? (
-              <Icon name={rightIcon} size={26} color={'#000'} />
+          {leftIcon &&
+            (typeof leftIcon === 'string' ? (
+              <Icon name={leftIcon} size={26} color={'#000'} />
             ) : (
-              rightIcon
+              leftIcon
             ))}
 
           <View style={[styles.headerTitleContainer, titleContainerStyle]}>
@@ -90,10 +91,10 @@ const AccordionItem = (props: AccordionItemProps) => {
             {renderSubTitle()}
           </View>
           <Animated.View style={[styles.headerIcon, animatedIconStyles]}>
-            {typeof leftIcon === 'string' ? (
-              <Icon name={leftIcon} size={26} color={'#000'} />
+            {typeof rightIcon === 'string' ? (
+              <Icon name={rightIcon} size={26} color={'#000'} />
             ) : (
-              leftIcon
+              rightIcon
             )}
           </Animated.View>
         </>
@@ -107,14 +108,16 @@ const AccordionItem = (props: AccordionItemProps) => {
         styles.accordionItem,
         !compact && styles.noCompactAccordionItem,
         itemContainerStyle,
-      ]}>
+      ]}
+    >
       {renderHeader()}
       <Animated.View style={[baseWrapperStyle, contentWrapperStyle]}>
         <View
           onLayout={e => {
             height.value = e.nativeEvent.layout.height;
           }}
-          style={[styles.contentContainer, contentContainerStyle]}>
+          style={[styles.contentContainer, contentContainerStyle]}
+        >
           {children}
         </View>
       </Animated.View>
