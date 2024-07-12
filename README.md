@@ -137,9 +137,15 @@ const styles = StyleSheet.create({
 </Accordion>
 ``` 
 
+## Donate
+Please contribute or donate so we can spend more time on this library.
+[Donate with Wise by clicking the link or by scanning the QRCode](https://wise.com/pay/me/mustaphag6)
+
+![Wise](./donate/wise.png)
+
 ## Authors
 - [@mustapha-ghlissi](https://www.github.com/mustapha-ghlissi)
 
-## Donate
-Please contribute or donate so we can spend more time on this library.
-[Donate with Wise](https://www.wise.com/pay/me/mustaphag6)
+## Other libraries
+- [React Native OTP](https://github.com/mustapha-ghlissi/react-native-otp): One time password input for React Native.
+- [React Native Select Picker](https://github.com/mustapha-ghlissi/react-native-select-picker): Dropdown select for React Native.
