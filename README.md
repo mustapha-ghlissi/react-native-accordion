@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
 ``` 
 
 ## Donate
-Please contribute or donate so we can spend more time on this library.
+<p>Please contribute or donate so we can spend more time on this library.</p>
 [Donate with Wise by clicking the link or by scanning the QRCode](https://wise.com/pay/me/mustaphag6)
 
 ![Wise](./donate/wise.png)
