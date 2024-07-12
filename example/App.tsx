@@ -10,6 +10,7 @@ import {
   Button,
   Image,
   SafeAreaView,
+  StatusBar,
   StyleSheet,
   Text,
   TextInput,
@@ -66,7 +67,9 @@ function Settings() {
 function App(): React.JSX.Element {
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar barStyle={'dark-content'} backgroundColor={'#FFF'} />
       <Accordion
+        compact
         titleStyle={styles.titleStyle}
         contentContainerStyle={styles.contentContainerStyle}>
         <AccordionItem

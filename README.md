@@ -14,8 +14,10 @@
 ![Screen 5](./screenshots/c-screen-2.jpg)
 ![Screen 6](./screenshots/c-screen-3.jpg)
 
-## Example
+## Demo
+![Demo](./demo/demo.gif)
 
+## Example
 You can check out this [<u><b>Example</b></u>](./example/).
 
 ## Installation
