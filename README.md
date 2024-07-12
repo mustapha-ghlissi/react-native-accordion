@@ -4,6 +4,7 @@
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![npm](https://img.shields.io/npm/v/@mustapha-ghlissi/react-native-accordion.svg)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-accordion)
+[![npm](https://img.shields.io/npm/types/@mustapha-ghlissi/react-native-accordion.svg)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-accordion)
 [![npm](https://img.shields.io/npm/dm/@mustapha-ghlissi/react-native-accordion.svg)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-accordion)
 
 ## Screenshots
@@ -21,32 +22,30 @@
 You can check out this [<u><b>Example</b></u>](./example/).
 
 ## Installation
-
 ##### Installing the package
-
 Use `npm` or `yarn` to install the package.
 
-```bash
+``` sh
 npm i @mustapha-ghlissi/react-native-accordion
 ```
 
-```bash
+``` sh
 yarn add @mustapha-ghlissi/react-native-accordion
 ```
-##### Installing dependencies
 
-```bash
+##### Installing dependencies
+``` sh
 npm i react-native-reanimated react-native-vector-icons
 ```
 
-```bash
+``` sh
 yarn add react-native-reanimated react-native-vector-icons
 ```
 
 > Note: to finish the installation, you have to finish configuring the installed dependencies [react-native-reanimated](https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started/) and [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons).
 
 ## Usage
-``` js
+``` tsx
 import {Accordion, AccordionItem} from '@mustapha-ghlissi/react-native-accordion';
 
 <Accordion>
@@ -101,7 +100,7 @@ import {Accordion, AccordionItem} from '@mustapha-ghlissi/react-native-accordion
 | rightIcon | `string` , `ReactNode`: optional | Accordion Item right icon (default = `chevron-right`). |
 
 ## Advanced Usage
-``` js
+``` tsx
 import {Accordion, AccordionItem} from '@mustapha-ghlissi/react-native-accordion';
 
 const styles = StyleSheet.create({
@@ -139,6 +138,8 @@ const styles = StyleSheet.create({
 ``` 
 
 ## Authors
-
 - [@mustapha-ghlissi](https://www.github.com/mustapha-ghlissi)
 
+## Donate
+Please contribute or donate so we can spend more time on this library.
+[Donate with Wise](https://www.wise.com/pay/me/mustaphag6)
