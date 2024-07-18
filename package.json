@@ -1,7 +1,7 @@
 {
   "name": "@mustapha-ghlissi/react-native-accordion",
   "version": "1.0.4",
-  "description": "React Native Accordion: a Collapsible Sections for React Native.",
+  "description": "React Native Accordion: Reanimated Collapsible Sections for React Native.",
   "type": "module",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -18,7 +18,9 @@
     "check": "yarn typescript && yarn lint",
     "build": "rm -rf lib && bob build && yarn copy-dts && yarn delete-dts && npm pack",
     "copy-dts": "copyfiles -u 1 \"src/**/*.d.ts\" lib/typescript",
-    "delete-dts": "find ./lib/commonjs -name '*.d.js*' -delete && find ./lib/module -name '*.d.js*' -delete"
+    "delete-dts": "find ./lib/commonjs -name '*.d.js*' -delete && find ./lib/module -name '*.d.js*' -delete",
+    "release": "release-it --no-git.requireCleanWorkingDir",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,9 @@
     "react-native-component",
     "accordion",
     "collapse",
+    "reanimated",
+    "reanimated-collapse",
+    "reanimated-accordion",
     "collapsible",
     "collapsible-sections",
     "panels",
@@ -50,17 +55,24 @@
   },
   "homepage": "https://github.com/mustapha-ghlissi/react-native-accordion#readme",
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@react-native/eslint-config": "^0.74.85",
+    "@release-it/conventional-changelog": "^8.0.1",
     "@types/react": "^18.3.3",
     "@types/react-native-vector-icons": "^6.4.18",
     "copyfiles": "^2.4.1",
-    "eslint": "^9.6.0",
+    "eslint": "^9.7.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.1.0",
+    "lint-staged": "^15.2.7",
     "prettier": "^3.3.2",
-    "react": "^18.3.1",
+    "react": "^18.2.0",
     "react-native": "^0.74.3",
     "react-native-builder-bob": "^0.25.0",
     "react-native-reanimated": "^3.13.0",
     "react-native-vector-icons": "^10.1.0",
+    "release-it": "^17.6.0",
     "typescript": "^5.5.3"
   },
   "peerDependencies": {
@@ -85,8 +97,7 @@
       ]
     ]
   },
-  "packageManager": "yarn@3.6.4",
-  "dependencies": {
-    "@mustapha-ghlissi/react-native-accordion": "^1.0.3"
+  "publishConfig": {
+    "access": "public"
   }
 }
