@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
 ![Wise](./donate/wise.png)
 
 ## Authors
-- [@mustapha-ghlissi](https://www.github.com/mustapha-ghlissi)
+- [@mustapha-ghlissi](https://www.linkedin.com/in/mustapha-ghlissi)
 
 ## Other libraries
 - [React Native OTP](https://github.com/mustapha-ghlissi/react-native-otp): One time password input for React Native.
