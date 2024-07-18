@@ -4,8 +4,13 @@
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![npm](https://img.shields.io/npm/v/@mustapha-ghlissi/react-native-accordion.svg)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-accordion)
-[![npm](https://img.shields.io/npm/types/@mustapha-ghlissi/react-native-accordion.svg)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-accordion)
+[![npm](https://img.shields.io/npm/unpacked-size/react-native-picker-select)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-accordion)
+[![npm](https://img.shields.io/npms-io/maintenance-score/react-native-accordion)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-accordion)
 [![npm](https://img.shields.io/npm/dm/@mustapha-ghlissi/react-native-accordion.svg)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-accordion)
+[![github](https://img.shields.io/github/v/release/mustapha-ghlissi/react-native-accordion)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-accordion)
+[![github](https://img.shields.io/github/actions/workflow/status/mustapha-ghlissi/react-native-accordion/release.yml)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-accordion)
+[![github](https://img.shields.io/github/contributors/mustapha-ghlissi/react-native-accordion)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-accordion)
+[![github](https://img.shields.io/github/release-date/mustapha-ghlissi/react-native-accordion)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-accordion)
 
 ## Screenshots
 ![Screen 1](./screenshots/screen-1.jpg)
@@ -150,4 +155,4 @@ const styles = StyleSheet.create({
 
 ## Other libraries
 - [React Native OTP](https://github.com/mustapha-ghlissi/react-native-otp): One time password input for React Native.
-- [React Native Select Picker](https://github.com/mustapha-ghlissi/react-native-select-picker): Dropdown select for React Native.
+- [React Native Select Picker](https://github.com/mustapha-ghlissi/react-native-select-picker): Reanimated Dropdown Select for React Native.
